@@ -8,7 +8,7 @@ import se.yrgo.domain.Student;
 
 @Local
 public interface StudentManagementService {
-	public void registerEmployee(Student student);
-	public List<Student>getAllEmployees ();
-	public List<Student>searchBysurname(String student);
+	public void insertStudent(Student newStudent);
+	public List<Student>findAllStudents();
+	public List<Student>findStudentByLastName(String lastName);
 }
