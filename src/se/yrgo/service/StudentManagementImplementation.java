@@ -5,28 +5,30 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
-import se.yrgo.domain.Employee;
+import se.yrgo.dataaccess.StudentDataAccess;
 import se.yrgo.domain.Student;
 
 @Stateless
 public class StudentManagementImplementation implements StudentManagementService {
 	
+	
+	
 	@Inject
 	private StudentDataAccess dao;
 	
 	
-	public void insertStudent(Student student) {
+	public void insertStudent(Student newStudent) {
 		dao.insertStudent(newStudent);
 	}
 
 	@Override
 	public List<Student> findAllStudents() {
-		return dao.findBySurname(lastname);;
+		return dao.findAllStudents();
 	}
 
 	@Override
-	public List<Student> findStudentByLastName(String student) {
-		return findAll();
+	public List<Student> findStudentByLastName(String lastName) {
+		return dao.findStudentByLastName(lastName);
 	}
 	
 	@Override
