@@ -1,7 +1,6 @@
 package se.yrgo.domain;
 
 import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,8 +23,8 @@ public class Student implements Serializable {
 		
 	}
 	
-	public Student(String firstName, String lastName, String admissionYear, String school ) {
-		super();
+	public Student(String firstName, String lastName, String admissionYear, String school) {
+		//super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.admissionYear = admissionYear;
@@ -62,8 +61,8 @@ public class Student implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Student: id =" + id + ", firstName =" + firstName + ", lastName =" + lastName + ", admissionYear="
-				+ admissionYear + ", school =" + "school";
+		return "Student: id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", admissionYear="
+				+ admissionYear + ", school=" + school;
 	}
 	
 	
