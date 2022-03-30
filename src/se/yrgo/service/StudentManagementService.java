@@ -11,4 +11,5 @@ public interface StudentManagementService {
 	public void insertStudent(Student newStudent);
 	public List<Student>findAllStudents();
 	public List<Student>findStudentByLastName(String lastName);
+	public Student findStudentById(int id);
 }
