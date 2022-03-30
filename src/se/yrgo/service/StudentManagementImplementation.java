@@ -1,5 +1,6 @@
 package se.yrgo.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
@@ -12,7 +13,6 @@ import se.yrgo.domain.Student;
 public class StudentManagementImplementation implements StudentManagementService {
 	
 	
-	
 	@Inject
 	private StudentDataAccess dao;
 	
@@ -23,7 +23,17 @@ public class StudentManagementImplementation implements StudentManagementService
 
 	@Override
 	public List<Student> findAllStudents() {
-		return dao.findAllStudents();
+		
+		Student stu1 = new Student("Gabriella", "Q", "2021", "Yrgo");
+		Student stu2 = new Student("Oscar", "N", "2021", "Yrgo");
+		Student stu3 = new Student("Patrik", "H", "2021", "Yrgo");
+		
+		List<Student> students = new ArrayList<Student>();
+		students.add(stu1);
+		students.add(stu2);
+		students.add(stu3);
+		return students;
+		
 	}
 
 	@Override

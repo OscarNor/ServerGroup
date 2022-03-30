@@ -18,7 +18,7 @@
 	<property name="server-dist" value="C:\dev\wildfly-23.0.0.Final\standalone\deployments\"/>
 
 
-		<property name="warfile" value="${server-dist}/EmployeeManagement.war"/>	 
+		<property name="warfile" value="${server-dist}/StudentManagement.war"/>	 
 
 	    <path id="my.classpath">
 	        <pathelement path="${java.class.path}"/>

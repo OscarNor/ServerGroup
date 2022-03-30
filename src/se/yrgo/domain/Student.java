@@ -2,17 +2,19 @@ package se.yrgo.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class Student implements Serializable {
 
+	private static final long serialVersionUID = -1398578751550404682L; 
+	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	
 	private int id;
-
 	private String firstName;
 	private String lastName;
 	private String admissionYear;
@@ -28,6 +30,10 @@ public class Student implements Serializable {
 		this.lastName = lastName;
 		this.admissionYear = admissionYear;
 		this.school = school;
+	}
+	
+	public static long getSUID(){
+		return serialVersionUID;
 	}
 	
 	public int getId() {
