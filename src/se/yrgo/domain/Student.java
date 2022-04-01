@@ -59,7 +59,30 @@ public class Student implements Serializable {
 	public String getSchool() {
 		return school;
 	}
+	
+	
+	// Setters
+	public void setId(int id) {
+		this.id = id;
+	}
 
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public void setAdmissionYear(String admissionYear) {
+		this.admissionYear = admissionYear;
+	}
+
+	public void setSchool(String school) {
+		this.school = school;
+	}
+
+	
 	@Override
 	public String toString() {
 		return "Student: id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", admissionYear="

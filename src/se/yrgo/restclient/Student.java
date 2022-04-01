@@ -7,6 +7,9 @@ public class Student {
 	private String lastName;
 	private String admissionYear;
 	private String school;
+	
+	
+	
 	public int getId() {
 		return id;
 	}

@@ -12,7 +12,7 @@ import javax.persistence.TypedQuery;
 import se.yrgo.domain.Student;
 
 @Stateless
-@Alternative
+@Default
 public class StudentDataAccessProdVersion implements StudentDataAccess {
 	
 	@PersistenceContext
