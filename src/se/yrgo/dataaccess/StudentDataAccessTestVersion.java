@@ -32,6 +32,7 @@ public class StudentDataAccessTestVersion implements StudentDataAccess {
 
 	@Override
 	public List<Student> findAllStudents() {
+		/*
 		Student stu1 = new Student("Gabriella", "Q", "2021", "Yrgo");
 		Student stu2 = new Student("Oscar", "N", "2021", "Yrgo");
 		Student stu3 = new Student("Patrik", "H", "2021", "Yrgo");
@@ -41,6 +42,8 @@ public class StudentDataAccessTestVersion implements StudentDataAccess {
 		students.add(stu2);
 		students.add(stu3);
 		return students;
+		*/
+		return null;
 	}
 
 	@Override
