@@ -3,6 +3,7 @@ package se.yrgo.dataaccess;
 import java.util.List;
 
 import javax.ejb.Stateless;
+import javax.enterprise.inject.Alternative;
 import javax.enterprise.inject.Default;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -11,7 +12,7 @@ import javax.persistence.TypedQuery;
 import se.yrgo.domain.Student;
 
 @Stateless
-@Default
+@Alternative
 public class StudentDataAccessProdVersion implements StudentDataAccess {
 	
 	@PersistenceContext

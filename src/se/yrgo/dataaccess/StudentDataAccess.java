@@ -1,9 +1,7 @@
 package se.yrgo.dataaccess;
 
 import java.util.List;
-
 import javax.ejb.Local;
-
 import se.yrgo.domain.Student;
 
 @Local

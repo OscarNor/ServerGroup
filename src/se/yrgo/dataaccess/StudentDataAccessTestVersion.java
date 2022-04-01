@@ -12,7 +12,7 @@ import javax.persistence.PersistenceContext;
 import se.yrgo.domain.Student;
 
 @Stateless
-@Alternative
+@Default
 public class StudentDataAccessTestVersion implements StudentDataAccess {
 	
 	@PersistenceContext

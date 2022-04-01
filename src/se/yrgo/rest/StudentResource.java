@@ -2,7 +2,6 @@ package se.yrgo.rest;
 
 import se.yrgo.domain.Student;
 import se.yrgo.service.*;
-
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.ws.rs.GET;

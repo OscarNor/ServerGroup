@@ -31,6 +31,7 @@ public class Student implements Serializable {
 		this.school = school;
 	}
 	
+	// Getters
 	public static long getSUID(){
 		return serialVersionUID;
 	}
