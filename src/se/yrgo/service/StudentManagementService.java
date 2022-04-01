@@ -10,4 +10,5 @@ public interface StudentManagementService {
 	public List<Student>findAllStudents();
 	public List<Student>findStudentByLastName(String lastName);
 	public Student findStudentById(int id);
+	public Student getById(int id);
 }
